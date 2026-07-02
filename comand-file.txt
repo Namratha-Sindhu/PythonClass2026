@@ -1,0 +1,43 @@
+Deleting the working directory means 
+        deleting the file from the project which is already staged and commited
+
+steps:
+create a file 
+add to staging area 
+commit the file
+
+
+#Undo unstaged changes
+------------------------------------------------------------------
+Means : Ensure to undo the newly created file and modified files or the changes made to the file if it is not added to staging area 
+
+Step:
+create a file 
+modify an existing file
+without adding these files to staging area execute the following command 
+git checkout file name or checkout . for all
+to remove the file : git clean -dn and git clean -df
+
+Undo staged changes
+------------------------------------------------------------------------------------
+
+steps:
+Modify and create a new file and add them to staging area and do not commit
+execute : git restore --staged file name and git checkout file name
+
+
+Delete commit using reset 
+------------------------------------------------------
+use :   git reset --soft head~1
+        git reset head~1
+        git reset --hard head~1
+        git ls-files
+        git log
+
+
+Deleting the branches:
+---------------------------------------------------------
+Create branche 
+go to other branch and to delete the newly created branch 
+execute: git branch -D branch name
+
